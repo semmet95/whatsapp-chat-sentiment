@@ -22,7 +22,7 @@ Update the **config.json** file.
 - Add GCP json key file name under **gcp auth file**.
 - Add the name of the friend you want to analyze texts with under **chat with**.
 - Set **scroll count** to the number of times you want to scroll up to retrience older chats (approximately).
-- Set **wait time** to thenumber of seconds you want the script to wait for older texts to load before scrolling up.
+- Set **wait time** to the number of seconds you want the script to wait for older texts to load before scrolling up.
 - Set **num threads** to the number of concurrent threads you want to run to send API requests.
 - Set **language script code** to the ISO language code of the script used in the texts.
 
