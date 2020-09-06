@@ -5,7 +5,6 @@ from collections import Counter
 import queue
 import threading
 import concurrent.futures
-from multiprocessing import Manager
 import json
 import csv
 import itertools as it
