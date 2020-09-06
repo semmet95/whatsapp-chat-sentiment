@@ -1,0 +1,40 @@
+{
+    "gcp" :
+        {
+            "gcp auth file" : "<json file name>"
+        },
+
+    "selenium" :
+        {
+            "out div class names" : ["_2hqOq message-out focusable-list-item", "_2hqOq _28DtS message-out focusable-list-item"],
+            "in div class names" : ["_2hqOq message-in focusable-list-item", "_2hqOq _28DtS message-in focusable-list-item"],
+            "qr scan class name" : "Scan me!",
+            "lock class name" : "lock-small",
+            "search bar class name" : "_3FRCZ copyable-text selectable-text",
+            "msg class name common" : "eRacY",
+            "msg span class" : "._3Whw5.selectable-text.invisible-space.copyable-text",
+            "msg body class" : "_2-aNW"
+        },
+
+    "chat with" : "<Friend's name>",
+
+    "url" : "https://web.whatsapp.com/",
+
+    "__comment__scroll count" : "this is approximately the number of times selenium scrolls up to retrieve older texts",
+    "scroll count" : 500,
+
+    "__comment__wait time" : "this is the number of seconds selenium waits for the older texts to load before scrolling up",
+    "wait time" : 1,
+
+    "target language code" : "en",
+
+    "language script code" : "en",
+
+    "__comment__key exceptions" : "list of words incorrectly translated along with their proper translations",
+    "key exceptions" :
+        {
+            "haan" : "yes",
+            "han" : "yes",
+            "meri" : "my"
+        }
+}
