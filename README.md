@@ -32,6 +32,6 @@ python3 main.py
 ```
 Open Whatsapp app in your phone, scan the QR Code and let Selenium handle the rest.
 
-Once all the texts have been scraped, the script uses GCP Translate and AWS Comprehend API to translate and analyze the texts to extract sentiment data and key phrases, categorized as texts sent by you and texts received.
+Once all the texts have been scraped, the script uses GCP Translate and AWS Comprehend API to translate and analyze the texts to extract sentiment data and key phrases, categorized as texts sent by you and texts received. API call responses are displayed as output too (including only the 3 highest scoring key phrases).
 
 The sentiment data and key phrases are then exported to a csv file in the **exports** folder.
