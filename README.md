@@ -39,3 +39,21 @@ The sentiment data and key phrases are then exported to a csv file in the **expo
 
 ## Managing sentiment and key phrases weights
 
+#### Sentiment weights are updated as follows
+
+```
+sentiment_data[key] = round(((text_sentiment[key] + sentiment_data[key] * (ctr - 1)) / ctr), 2)
+```
+averaging out the weight of each sentiment over the weights returned with every API call.
+
+
+#### Key phrase weights are updated as follows
+
+```
+if all_phrases_weights.get(phrase) is None:
+        all_phrases_weights[phrase] = round(sigmoid(phrases_weights[phrase]), 2)
+
+else:
+    all_phrases_weights[phrase] = round(sigmoid(all_phrases_weights[phrase] + (random.random() *  phrases_weights[phrase])), 2)
+```
+To keep the weights within the range of [0,1), sigmoid function is used. This keeps the weights from exploding in case a key phrase is used repetitively. Also a random multiplier in the range [0,1) is introduced if a key phrase is encoutered again, to decrease the effect of frequency on weights.
