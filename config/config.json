@@ -26,6 +26,8 @@
     "__comment__wait time" : "this is the number of seconds selenium waits for the older texts to load before scrolling up",
     "wait time" : 1,
 
+    "num threads" : 10,
+
     "target language code" : "en",
 
     "language script code" : "en",

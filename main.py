@@ -146,7 +146,7 @@ def api_request():
 ##---------------------------------------------------------------------------------------------------------##
 
 # initiate threads to send api requests parallely
-num_threads = 10
+num_threads = config['num threads']
 for i in range(num_threads):
 
     request_thread = threading.Thread(target = api_request)
