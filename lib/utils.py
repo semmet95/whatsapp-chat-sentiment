@@ -16,7 +16,7 @@ def update_weights(all_phrases_weights, phrases_weights, phrase):
     """updates/adds weight of a key phrase"""
 
     if all_phrases_weights.get(phrase) is None:
-        all_phrases_weights[phrase] = round(sigmoid(random.random() * phrases_weights[phrase]), 2)
+        all_phrases_weights[phrase] = round(sigmoid(phrases_weights[phrase]), 2)
 
     else:
         all_phrases_weights[phrase] = round(sigmoid(all_phrases_weights[phrase] \
