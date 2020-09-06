@@ -1,4 +1,4 @@
 # whatsapp-chat-sentiment
 ## Whtsapp Chat Sentiment Analyzer
 
-Test heading
+Analyze Whatsapp texts with a friend using AWS Comprehend to get insights into the sentiments and key phrases.
