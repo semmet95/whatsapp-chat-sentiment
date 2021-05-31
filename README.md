@@ -61,3 +61,5 @@ else:
     all_phrases_weights[phrase] = round(sigmoid(all_phrases_weights[phrase] + (random.random() *  phrases_weights[phrase])), 2)
 ```
 To keep the weights within the range of [0,1), sigmoid function is used. This keeps the weights from exploding in case a key phrase is used repetitively. Also a random multiplier in the range [0,1) is introduced if a key phrase is encoutered again, to decrease the effect of frequency on weights.
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/gbraad)
